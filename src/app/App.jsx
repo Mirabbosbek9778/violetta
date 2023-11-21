@@ -21,8 +21,3 @@ const App = () => {
 
 export default App;
 
-{
-  /* <Navbar />
-<NavbarItem/>
-<Body /> */
-}

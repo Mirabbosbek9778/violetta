@@ -1,13 +1,21 @@
+import { Container, Wrapper } from "../../components/body/style";
+import Footer from "../../components/footer/Footer";
+import Map from "../../components/map/Map";
+import Message from "../../components/message/Message";
 import Navbar from "../../components/navbar/Navbar";
-import NavbarItem from "../../components/navbar/navbarItem/NavbarItem";
+import Item from "../../components/navbar/item/Item";
 
 const Contact = () => {
   return (
-    <div>
+    <Wrapper>
       <Navbar />
-      <NavbarItem />
-      contact
-    </div>
+      <Item />
+      <Container>
+        <Map />
+        <Message />
+      </Container>
+      <Footer />
+    </Wrapper>
   );
 };
 

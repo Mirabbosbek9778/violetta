@@ -1,104 +1,62 @@
 import {
-  ContainerItem,
   Container,
-  Input,
-  Main,
-  Wrapper,
-  Text,
   Image,
-  LogoImg,
+  ImageMenu,
+  Input,
+  Select,
+  Sidebar,
+  Text,
+  Wrapper,
 } from "./style";
-import Logo from "../../assets/images/logo.jpg";
-import Search from "../../assets/icons/search.svg";
-import { Button, Dropdown, Menu } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import { Logo2, Menu } from "../../assets/allImage";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const handleLanguageChange = (key, label) => {
-    setSelectedLanguage(label);
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
   };
-  const items = [
-    {
-      key: "1",
-      label: (
-        <div className="flex items-center gap-4 justify-center hover:bg-yellow-500 ">
-          <img
-            src="https://blog-website-alisher-rustamov.vercel.app/img/leng/eng.png"
-            alt="English"
-          />
 
-          <Text size>English</Text>
-        </div>
-      ),
-    },
-    {
-      key: "2",
-      label: (
-        <div className="flex items-center gap-4 justify-center hover:bg-yellow-500">
-          <img
-            src="https://blog-website-alisher-rustamov.vercel.app/img/leng/ru.png"
-            alt="Russian"
-          />
-          <Text size>Russian</Text>
-        </div>
-      ),
-    },
-    {
-      key: "3",
-      label: (
-        <div className="flex items-center gap-5 justify-center hover:bg-yellow-500">
-          <img
-            src="https://blog-website-alisher-rustamov.vercel.app/img/leng/uz.png"
-            alt="Turkey"
-          />
-          <Text size>Turkey</Text>
-        </div>
-      ),
-    },
-  ];
+  const closeSidebar = () => {
+    setSidebarOpen(false);
+  };
   return (
     <Wrapper>
-      <Main>
-        <Container>
-          <ContainerItem href="/">
-            <LogoImg src={Logo} alt="" />
+      <Container>
+        <Link to="/" className="flex items-center gap-3">
+          <Image src={Logo2} alt="logo" />
+          <Text>Violetta</Text>
+        </Link>
+        <Input type="text" placeholder="Search" />
+        <Select name="" id="">
+          <option value="English">English</option>
+          <option value="Russian">Russian</option>
+          <option value="Turkey">Turkey</option>
+        </Select>
+
+        <ImageMenu src={Menu} alt="Menu" onClick={toggleSidebar} />
+
+        <Sidebar isOpen={sidebarOpen}>
+          <button
+            onClick={closeSidebar}
+            className="w-10 h-10 text-white text-[34px] font-bold"
+          >
+            X
+          </button>
+          <div className="flex items-center gap-3">
+            <Image src={Logo2} alt="logo" />
             <Text>Violetta</Text>
-          </ContainerItem>
-        </Container>
-        <div className="flex">
+          </div>
           <Input type="text" placeholder="Search" />
-          <Image src={Search} alt="Search" />
-        </div>
-        <Dropdown
-          overlay={
-            <Menu>
-              {items.map((item) => (
-                <Menu.Item
-                  key={item?.key}
-                  onClick={() =>
-                    handleLanguageChange(
-                      item?.key,
-                      item?.label?.props?.children[1]?.props?.children
-                    )
-                  }
-                >
-                  {item?.label}
-                </Menu.Item>
-              ))}
-            </Menu>
-          }
-          placement="bottom"
-          arrow
-        >
-          <Button className="flex gap-2 justify-center items-center bg-white">
-            {selectedLanguage}
-            <DownOutlined />
-          </Button>
-        </Dropdown>
-      </Main>
+          <Select name="" id="">
+            <option value="English">English</option>
+            <option value="Russian">Russian</option>
+            <option value="Turkey">Turkey</option>
+          </Select>
+        </Sidebar>
+      </Container>
     </Wrapper>
   );
 };

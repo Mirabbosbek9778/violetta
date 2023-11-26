@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   width: 100%;
-  background-color: rgb(158, 38, 158);
   display: flex;
-  padding: 10px 150px 10px 150px;
+  justify-content: center;
+  background-color: #b05fa1;
 `;
-const Main = styled.div`
+
+const Container = styled.div`
   width: 100%;
   max-width: 1440px;
   display: flex;
@@ -14,41 +15,81 @@ const Main = styled.div`
   justify-content: space-between;
 `;
 
-const Container = styled.div`
-  /* color: white; */
-  cursor: pointer;
-`;
-const ContainerItem = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-const Input = styled.input`
-  width: 400px;
-  border: none;
+const Image = styled.img`
+  width: 90px;
+  height: 90px;
   border-radius: 10px;
-  height: 50px;
-  color: black;
-  outline: none;
-  padding-left: 20px;
-  position: relative;
+  @media (max-width: 550px) {
+    display: none;
+  }
 `;
 
 const Text = styled.h1`
-  font-weight: 700;
-  font-size: ${({ size }) => (size ? "16px" : "26px")};
-  color: ${({ size }) => (size ? "black" : "white")};
+  color: #fff;
+  font-family: Okta Neue, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @media (max-width: 550px) {
+    margin-bottom: 20px;
+    display: none;
+  }
+`;
+const Input = styled.input`
+  width: 350px;
+  height: 50px;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 `;
 
-const Image = styled.img`
-  position: absolute;
-  right: 830px;
-  top: 20px;
+const Select = styled.select`
+  width: 100px;
+  height: 50px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    color: black;
+  }
+
+  @media (max-width: 550px) and (min-width: 550px) {
+    display: none;
+  }
 `;
 
-const LogoImg = styled.img`
-  height: 48px;
-  width: 48px;
+const ImageMenu = styled.img`
+  width: 50px;
+  height: 50px;
+
+  @media (min-width: 550px) {
+    display: none;
+  }
 `;
-export { LogoImg, Wrapper, Main, Input, Container, ContainerItem, Text, Image };
+
+const Sidebar = styled.div`
+  position: fixed;
+  top: 0;
+  right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  transition: right 0.3s ease-in-out;
+`;
+
+export { Container, Wrapper, Image, Text, Input, Select, ImageMenu, Sidebar };

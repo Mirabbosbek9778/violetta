@@ -1,13 +1,27 @@
 import Body from "../../components/body/Body";
 import Navbar from "../../components/navbar/Navbar";
-import NavbarItem from "../../components/navbar/navbarItem/NavbarItem";
+import Item from "../../components/navbar/item/Item";
+import Card from "../../components/card/Card";
+import Map from "../../components/map/Map";
+import Message from "../../components/message/Message";
+import Footer from "../../components/footer/Footer";
+import { Main, Wrapper } from "../../components/card/style";
+
 const Home = () => {
   return (
-    <div>
+    <Wrapper>
       <Navbar />
-      <NavbarItem />
+      <Item />
       <Body />
-    </div>
+      <Main gap="true">
+        <Card />
+        <div className="flex gap-2 items-center">
+          <Map />
+          <Message />
+        </div>
+      </Main>
+      <Footer />
+    </Wrapper>
   );
 };
 

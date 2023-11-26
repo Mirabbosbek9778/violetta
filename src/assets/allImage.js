@@ -1,7 +1,6 @@
 import Search from "./icons/search.svg";
 import Error404 from "./icons/404.svg";
 import Logo2 from "./images/logo2.jpg";
-import Logo from "./images/logo.png";
 import Menu from "./icons/menu.svg";
 import Close from "./icons/close.png";
 import Compress2 from "./images/violet2.png";
@@ -20,7 +19,6 @@ export {
   Search,
   Error404,
   Logo2,
-  Logo,
   Menu,
   Close,
   Violet2,

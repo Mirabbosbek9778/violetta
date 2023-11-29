@@ -1,6 +1,6 @@
 import { Container, Wrapper } from "../../components/body/style";
 import Footer from "../../components/footer/Footer";
-import Map from "../../components/map/Map";
+import Maps from "../../components/map/Map";
 import Message from "../../components/message/Message";
 import Navbar from "../../components/navbar/Navbar";
 import Item from "../../components/navbar/item/Item";
@@ -11,7 +11,7 @@ const Contact = () => {
       <Navbar />
       <Item />
       <Container>
-        <Map />
+        <Maps />
         <Message />
       </Container>
       <Footer />

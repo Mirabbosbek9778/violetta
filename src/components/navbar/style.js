@@ -20,9 +20,6 @@ const Image = styled.img`
   width: 90px;
   height: 90px;
   border-radius: 10px;
-  @media (max-width: 550px) {
-    display: none;
-  }
 `;
 
 const Text = styled.h1`
@@ -35,11 +32,6 @@ const Text = styled.h1`
   color: ${({ colur }) => (colur ? "black" : "white")};
   font-size: ${({ colur }) => (colur ? "20px" : "24px")};
   font-weight: ${({ colur }) => (colur ? "400" : "600")};
-
-  @media (max-width: 550px) {
-    margin-bottom: 20px;
-    display: none;
-  }
 `;
 const Input = styled.input`
   width: 350px;
@@ -49,10 +41,6 @@ const Input = styled.input`
   padding-left: 10px;
   &:hover {
     cursor: pointer;
-  }
-
-  @media (max-width: 550px) {
-    display: none;
   }
 `;
 
@@ -70,30 +58,6 @@ const Select = styled.select`
     cursor: pointer;
     color: black;
   }
-
-  @media (max-width: 550px) and (min-width: 550px) {
-    display: none;
-  }
 `;
 
-const ImageMenu = styled.img`
-  width: 50px;
-  height: 50px;
-
-  @media (min-width: 550px) {
-    display: none;
-  }
-`;
-
-const Sidebar = styled.div`
-  position: fixed;
-  top: 0;
-  right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.5;
-  transition: right 0.3s ease-in-out;
-`;
-
-export { Container, Wrapper, Image, Text, Input, Select, ImageMenu, Sidebar };
+export { Container, Wrapper, Image, Text, Input, Select };

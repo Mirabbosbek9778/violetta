@@ -1,10 +1,10 @@
-import { Violet1 } from "../../assets/allImage";
+import { Compressing } from "../../assets/allImage";
 import { Image, Wrapper } from "./style";
 
 const Body = () => {
   return (
     <Wrapper>
-      <Image src={Violet1} alt="Compress2" />
+      <Image src={Compressing} alt="Compressing" />
     </Wrapper>
   );
 };

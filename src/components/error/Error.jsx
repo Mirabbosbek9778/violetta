@@ -1,9 +1,9 @@
-import Erroring from "../../assets/icons/404.svg";
+import { Error404 } from "../../assets/allImage";
 
 const Error = () => {
   return (
     <div className="flex justify-center items-center">
-      <img src={Erroring} alt="Erroring" />
+      <img src={Error404} alt="Erroring" />
     </div>
   );
 };

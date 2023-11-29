@@ -1,5 +1,5 @@
 import { Container, Wrapper } from "../../components/body/style";
-import { Compress2 } from "../../assets/allImage";
+import { Compressing } from "../../assets/allImage";
 import Description from "../../components/description/Description";
 import Navbar from "../../components/navbar/Navbar";
 import Item from "../../components/navbar/item/Item";
@@ -12,7 +12,7 @@ const About = () => {
       <Container className="pt-4">
         <div className="flex gap-5 pl-2 items-center justify-center">
           <img
-            src={Compress2}
+            src={Compressing}
             alt="Compress2"
             className="w-[700px] h-[700px] rounded-sm"
           />

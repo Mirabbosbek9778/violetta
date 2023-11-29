@@ -1,8 +1,8 @@
-import Card from "../../components/card/Card";
 import { dataCards } from "../../mock/dataCards";
 import Navbar from "../../components/navbar/Navbar";
 import Item from "../../components/navbar/item/Item";
 import { Main, Wrapper } from "../../components/card/style";
+import Cards from "../../components/card/Card";
 
 const Product = () => {
   return (
@@ -11,7 +11,7 @@ const Product = () => {
       <Item />
       <Main>
         {dataCards.map((item, _) => (
-          <Card key={_} {...item} />
+          <Cards key={_} {...item} />
         ))}
       </Main>
     </Wrapper>

@@ -1,22 +1,32 @@
 /* eslint-disable react/prop-types */
-import { Container, Content, Title } from "./style";
-import { Violet1 } from "../../assets/allImage";
+import { Container, Content } from "./style";
+import { Compressing } from "../../assets/allImage";
 import { Link } from "react-router-dom";
+import { Card } from "antd";
+const { Meta } = Card;
 
-const Card = ({ title, about }) => {
+const Cards = ({ title, about }) => {
   return (
-    <Link to="/product">
-      <Container>
-        <Content>
-          <img src={Violet1} alt="icon" className="w-full h-[200px]" />
-          <div className="flex flex-col gap-5">
-            <Title>{title}</Title>
-            <Title size>{about}</Title>
-          </div>
-        </Content>
-      </Container>
-    </Link>
+    <Container>
+      <Content>
+        <Link to="/product">
+          <Card
+            hoverable
+            className="w-[350px] h-[400px]"
+            cover={
+              <img
+                alt="Compressing"
+                src={Compressing}
+                className="w-full h-[200px] bg-cover"
+              />
+            }
+          >
+            <Meta title={title} description={about} />
+          </Card>
+        </Link>
+      </Content>
+    </Container>
   );
 };
 
-export default Card;
+export default Cards;

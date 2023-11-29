@@ -5,7 +5,9 @@ import Card from "../../components/card/Card";
 import Map from "../../components/map/Map";
 import Message from "../../components/message/Message";
 import Footer from "../../components/footer/Footer";
-import { Main, Wrapper } from "../../components/card/style";
+import { Wrapper } from "../../components/card/style";
+import MiniCard from "../../components/miniCard/MiniCard";
+import CardGeneral from "../../components/generalCard/CardGeneral";
 
 const Home = () => {
   return (
@@ -13,13 +15,15 @@ const Home = () => {
       <Navbar />
       <Item />
       <Body />
-      <Main gap="true">
-        <Card />
-        <div className="flex gap-2 items-center">
-          <Map />
-          <Message />
-        </div>
-      </Main>
+      <div className="h-5"></div>
+      <CardGeneral />
+      <div className="h-5"></div>
+      <div className="flex gap-4 items-center">
+        <Map />
+        <Message />
+      </div>
+      <div className="h-5"></div>
+      <MiniCard />
       <Footer />
     </Wrapper>
   );

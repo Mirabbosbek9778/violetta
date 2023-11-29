@@ -4,7 +4,7 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #b05fa1;
+  background-color: #461f4b;
   margin-top: 20px;
   padding: 30px 150px 30px 150px;
 `;
@@ -16,10 +16,10 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const Content = styled.a`
+const Content = styled.div`
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 
   &:hover {
     border-bottom: 1px solid red;
@@ -50,6 +50,11 @@ const TextHover = styled.h1`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: ${({ sizing }) => (sizing ? "150px" : "")};
+  width: ${({ gap }) => (gap ? "250px" : "")};
   &:hover {
     border-bottom: ${({ size }) => (size ? "" : "1px solid red")};
     color: red;

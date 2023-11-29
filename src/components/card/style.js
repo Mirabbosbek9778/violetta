@@ -6,6 +6,7 @@ const Container = styled.div`
   border: 1px solid whitesmoke;
   box-shadow: 20px 20px 20px whitesmoke;
   border-radius: 10px;
+  margin-bottom: 50px;
 `;
 
 const Wrapper = styled.div`
@@ -24,7 +25,6 @@ const Main = styled.div`
   align-items: center;
   padding-top: 20px;
   flex-wrap: wrap;
-  flex-direction: ${({ gap }) => (gap ? "column" : "")};
 `;
 
 const Title = styled.h1`

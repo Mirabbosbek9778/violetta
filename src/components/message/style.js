@@ -23,6 +23,7 @@ const Button = styled.button`
   height: 50px;
   border-radius: 10px;
   background: rgb(65, 65, 226);
+  outline: none;
 
   &:hover {
     cursor: pointer;

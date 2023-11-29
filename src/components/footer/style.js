@@ -30,10 +30,11 @@ const Content = styled.div`
 
 const Text = styled.h1`
   color: white;
-  font-family: Okta Neue, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 34px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
 `;
 
@@ -45,10 +46,11 @@ const Main = styled.div`
 
 const TextHover = styled.h1`
   color: white;
-  font-family: Okta Neue, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   display: flex;
   align-items: center;

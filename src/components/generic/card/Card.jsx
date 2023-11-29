@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { Container, Content } from "./style";
-import { Compressing } from "../../assets/allImage";
 import { Link } from "react-router-dom";
 import { Card } from "antd";
 const { Meta } = Card;
+import { Compressing } from "../../../assets/allImage";
 
 const Cards = ({ title, about }) => {
   return (

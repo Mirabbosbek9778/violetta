@@ -24,10 +24,11 @@ const Image = styled.img`
 
 const Text = styled.h1`
   color: #fff;
-  font-family: Roboto, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   color: ${({ colur }) => (colur ? "black" : "white")};
   font-size: ${({ colur }) => (colur ? "20px" : "24px")};

@@ -3,10 +3,10 @@ import Navbar from "../../components/navbar/Navbar";
 import Item from "../../components/navbar/item/Item";
 import Message from "../../components/message/Message";
 import Footer from "../../components/footer/Footer";
-import { Wrapper } from "../../components/card/style";
-import MiniCard from "../../components/miniCard/MiniCard";
-import CardGeneral from "../../components/generalCard/CardGeneral";
+import { Wrapper } from "../..//components/generic/card/style";
 import Maps from "../../components/map/Map";
+import CardGeneral from "../../components/generic/generalCard/CardGeneral";
+import MiniCard from "../../components/generic/miniCard/MiniCard";
 
 const Home = () => {
   return (

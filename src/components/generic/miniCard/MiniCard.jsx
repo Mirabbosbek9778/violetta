@@ -1,12 +1,12 @@
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Compressing } from "../../assets/allImage";
+import { Compressing } from "../../../assets/allImage";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "../../index.css";
+import "../../../index.css";
 
 const MiniCard = () => {
   return (

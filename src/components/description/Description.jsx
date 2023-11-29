@@ -1,7 +1,7 @@
 const Description = () => {
   return (
     <div>
-      <p className="text-[16px]">
+      <p className="text-[16px] font-normal font-sans">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ad, quasi
         deleniti sapiente iusto explicabo maiores exercitationem porro enim
         aliquam optio voluptatum rerum harum quo minus molestiae omnis quas

@@ -1,7 +1,9 @@
 import { Card } from "antd";
 const { Meta } = Card;
-import { dataCards } from "../../mock/dataCards";
-import { Compressing } from "../../assets/allImage";
+
+import { dataCards } from "../../../mock/dataCards";
+import { Compressing } from "../../../assets/allImage";
+
 import { Link } from "react-router-dom";
 
 const CardGeneral = () => {
@@ -20,7 +22,11 @@ const CardGeneral = () => {
               />
             }
           >
-            <Meta title="Europe Street beat" description={item?.about} />
+            <Meta
+              title="Europe Street beat"
+              description={item?.about}
+              className="font-sans font-normal"
+            />
           </Card>
         </Link>
       ))}

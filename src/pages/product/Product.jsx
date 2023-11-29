@@ -1,8 +1,8 @@
-import { dataCards } from "../../mock/dataCards";
 import Navbar from "../../components/navbar/Navbar";
 import Item from "../../components/navbar/item/Item";
-import { Main, Wrapper } from "../../components/card/style";
-import Cards from "../../components/card/Card";
+import Cards from "../../components/generic/card/Card";
+import { Main, Wrapper } from "../../components/generic/card/style";
+import { dataCards } from "../../mock/dataCards";
 
 const Product = () => {
   return (

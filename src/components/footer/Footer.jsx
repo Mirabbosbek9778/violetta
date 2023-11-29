@@ -1,15 +1,15 @@
 import { OrderStatus } from "../../assets/allImage";
 import { Container, Content, Main, Text, TextHover, Wrapper } from "./style";
+import { Md6FtApart, MdOutlinePolicy, MdOutlinePhone } from "react-icons/md";
+import { IoMdInformationCircle } from "react-icons/io";
+import { FaTelegram, FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import { FiYoutube } from "react-icons/fi";
 import {
   CustomerServiceOutlined,
   WechatOutlined,
   CreditCardOutlined,
   MailOutlined,
 } from "@ant-design/icons";
-import { Md6FtApart, MdOutlinePolicy, MdOutlinePhone } from "react-icons/md";
-import { IoMdInformationCircle } from "react-icons/io";
-import { FaTelegram, FaFacebook, FaInstagramSquare } from "react-icons/fa";
-import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -20,12 +20,11 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <TextHover>
               <MdOutlinePhone />
-              +998 95 058 71 99
+              +998 99 577 9229
             </TextHover>
             <TextHover>
-              {" "}
               <MdOutlinePhone />
-              +998 95 058 71 99
+              +998 99 577 9229
             </TextHover>
           </div>
         </Main>
@@ -48,7 +47,7 @@ const Footer = () => {
         <Main>
           <Text>Email</Text>
           <div className="flex flex-col gap-4">
-            <TextHover >
+            <TextHover>
               <CustomerServiceOutlined className="w-7 h-7" /> Customer service
             </TextHover>
             <TextHover sizing="true">

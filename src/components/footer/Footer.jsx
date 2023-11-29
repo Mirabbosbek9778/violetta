@@ -20,11 +20,11 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <TextHover>
               <MdOutlinePhone />
-              +998 99 577 9229
+              +998 99 577 92 29
             </TextHover>
             <TextHover>
               <MdOutlinePhone />
-              +998 99 577 9229
+              +998 99 577 92 29
             </TextHover>
           </div>
         </Main>

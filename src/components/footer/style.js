@@ -52,6 +52,7 @@ const TextHover = styled.h1`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration: solid;
   display: flex;
   align-items: center;
   gap: 10px;
